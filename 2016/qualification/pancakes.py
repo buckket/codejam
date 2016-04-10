@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 
+"""
+Missed the mathematical background here.
+Simulating the problem is not necessary.
+
+See sample solution:
+def minimumFlips(pancakes):
+    groupedHeight = 1 + pancakes.count('-+') + pancakes.count('+-')
+    if pancakes.endswith('-'):
+        return groupedHeight
+    else:
+        return groupedHeight - 1
+"""
+
 
 def from_string(string):
     return list(map(lambda x: True if x == "+" else False, string[::-1]))
